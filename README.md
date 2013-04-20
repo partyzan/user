@@ -24,7 +24,7 @@ To use attributes for defining users, create a users data_bag:
   "id": "svargo",
   "uid": "1000",
   "deploy": "any",
-  ssh_keys: [...]
+  "ssh_keys": [...]
 }
 ```
 
