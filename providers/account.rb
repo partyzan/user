@@ -140,6 +140,7 @@ def configure_ssh
     mode        '0600'
     variables   :ssh_keys => l_ssh_keys
     source      'authorized_keys.erb'
+    cookbook	'user'
   end
   resource.run_action(:create)
   new_resource.updated_by_last_action(true) if resource.updated_by_last_action?
